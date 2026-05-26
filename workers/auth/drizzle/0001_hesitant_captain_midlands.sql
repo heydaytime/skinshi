@@ -1,0 +1,1 @@
+ALTER TABLE `bets` DROP COLUMN `payout_cases`;

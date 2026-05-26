@@ -1,0 +1,11 @@
+{
+	"extends": "@skinshi/typescript-config/expo.json",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["./src/*"]
+		},
+		"types": ["node", "@cloudflare/workers-types", "nativewind/types"]
+	},
+	"include": ["app", "src", "**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts", "nativewind-env.d.ts"]
+}

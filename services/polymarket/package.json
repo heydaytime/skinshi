@@ -1,0 +1,23 @@
+{
+  "name": "@skinshi/polymarket-service",
+  "module": "index.ts",
+  "exports": {
+    "./schemas": {
+      "types": "./src/schemas/index.ts",
+      "import": "./src/schemas/index.ts",
+      "default": "./src/schemas/index.ts"
+    }
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "superjson": "^2.2.6",
+    "zod": "^4.3.6"
+  }
+}

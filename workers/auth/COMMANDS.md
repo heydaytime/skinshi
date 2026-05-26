@@ -1,0 +1,1 @@
+CLOUDFLARE_DATABASE_ID=7612cda0-f0c2-46da-8840-76bee7f82437 npx drizzle-kit push

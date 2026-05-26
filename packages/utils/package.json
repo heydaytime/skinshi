@@ -1,0 +1,21 @@
+{
+	"name": "@skinshi/utils",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./date": "./src/date.ts"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint .",
+		"clean": "rm -rf .turbo"
+	},
+	"devDependencies": {
+		"@skinshi/eslint-config": "workspace:*",
+		"@skinshi/typescript-config": "workspace:*",
+		"eslint": "^9.0.0",
+		"typescript": "^5.9.3"
+	}
+}

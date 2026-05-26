@@ -1,0 +1,40 @@
+{
+	"name": "@skinshi/auth-worker",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts"
+	},
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev --port ${PORT:-8000}",
+		"start": "pnpm dev",
+		"test": "vitest",
+		"cf-typegen": "wrangler types",
+		"db:push": "drizzle-kit push",
+		"db:studio": "drizzle-kit studio",
+		"lint": "eslint .",
+		"typecheck": "tsc --noEmit",
+		"clean": "rm -rf .turbo"
+	},
+	"dependencies": {
+		"@hono/trpc-server": "^0.4.2",
+		"@skinshi/api": "workspace:*",
+		"drizzle-orm": "^0.45.2",
+		"hono": "^4.12.12",
+		"jose": "^6.2.2",
+		"superjson": "^2.2.6"
+	},
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250425.0",
+    "@skinshi/eslint-config": "workspace:*",
+    "@skinshi/typescript-config": "workspace:*",
+    "@types/node": "^20.0.0",
+    "drizzle-kit": "^0.31.0",
+    "eslint": "^9.0.0",
+    "typescript": "^5.9.3",
+    "vitest": "^3.0.0",
+    "wrangler": "^4.15.0"
+  }
+}

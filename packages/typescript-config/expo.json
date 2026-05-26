@@ -1,0 +1,24 @@
+{
+	"$schema": "https://json.schemastore.org/tsconfig",
+	"display": "Expo",
+	"extends": "./base.json",
+	"compilerOptions": {
+		"target": "ES2022",
+		"lib": ["dom", "dom.iterable", "ES2022"],
+		"allowJs": true,
+		"checkJs": false,
+		"jsx": "react-jsx",
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"declaration": false,
+		"declarationMap": false,
+		"baseUrl": ".",
+		"paths": {
+			"~/*": ["src/*"]
+		}
+	},
+	"include": ["src", "app", "index.ts"],
+	"exclude": ["node_modules", "android", "ios"]
+}

@@ -1,0 +1,9 @@
+{
+	"extends": "@skinshi/typescript-config/base.json",
+	"compilerOptions": {
+		"outDir": "./dist",
+		"rootDir": ".",
+		"types": ["@cloudflare/workers-types"]
+	},
+	"include": ["src"]
+}

@@ -1,0 +1,40 @@
+{
+	"name": "@skinshi/api",
+	"version": "0.0.1",
+	"private": true,
+	"type": "module",
+	"exports": {
+		".": "./src/index.ts",
+		"./trpc": "./src/trpc.ts",
+		"./router": "./src/router.ts",
+		"./context": "./src/context.ts",
+		"./schemas": "./src/schemas/index.ts",
+		"./schemas/bet": "./src/schemas/bet.ts",
+		"./schemas/market": "./src/schemas/market.ts",
+		"./db": "./src/db/index.ts",
+		"./db/schema": "./src/db/schema.ts",
+		"./services": "./src/services.ts",
+		"./config": "./src/config.ts",
+		"./types": "./src/types.ts"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint .",
+		"clean": "rm -rf .turbo node_modules"
+	},
+	"dependencies": {
+		"@skinshi/polymarket-service": "workspace:*",
+		"@skinshi/steam-service": "workspace:*",
+		"@trpc/server": "^11.16.0",
+		"drizzle-orm": "^0.45.2",
+		"superjson": "^2.2.6",
+		"zod": "^4.3.6"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20250425.0",
+		"@skinshi/eslint-config": "workspace:*",
+		"@skinshi/typescript-config": "workspace:*",
+		"eslint": "^9.0.0",
+		"typescript": "^5.9.3"
+	}
+}

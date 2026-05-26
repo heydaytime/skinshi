@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Package managers
+package-lock.json
+yarn.lock
+bun.lock
+bun.lockb
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tgz
+
+# Testing
+coverage/
+*.lcov
+.nyc_output
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Caches
+.eslintcache
+.cache/
+*.tsbuildinfo
+.npm
+.parcel-cache
+.vite/
+
+# IDE
+.opencode/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Wrangler
+.wrangler/
+.dev.vars
+.dev.vars.example
+
+# Steam service data
+steam-data/
+
+# Firebase
+.firebase/
+
+# Misc
+*.pem
+.vercel
+.serverless/
+.dynamodb/
+.tern-port
+.vscode-test

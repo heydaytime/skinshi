@@ -1,0 +1,26 @@
+{
+	"expo": {
+		"name": "Skinshi",
+		"slug": "skinshi-mobile",
+		"scheme": "skinshi",
+		"version": "1.0.0",
+		"orientation": "portrait",
+		"userInterfaceStyle": "dark",
+		"assetBundlePatterns": ["**/*"],
+		"ios": {
+			"supportsTablet": true,
+			"bundleIdentifier": "com.skinshi.mobile"
+		},
+		"android": {
+			"package": "com.skinshi.mobile"
+		},
+		"web": {
+			"bundler": "metro",
+			"output": "static"
+		},
+		"plugins": ["expo-router"],
+		"experiments": {
+			"typedRoutes": true
+		}
+	}
+}
